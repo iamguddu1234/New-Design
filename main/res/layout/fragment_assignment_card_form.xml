@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Assignment_card_form">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffff"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/edit_a_meeting_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:background="#ffff"
+            android:paddingBottom="@dimen/_2sdp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp"
+            app:navigationIcon="@drawable/ic_baseline_cancel_24"
+            app:title="Create Assignment" />
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_40sdp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffff"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_10sdp">
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/et_first_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/roboto"
+                    android:paddingEnd="@dimen/_6sdp"
+                    android:text="Assignment Title"
+                    android:textColor="@color/deepTextColor"
+                    android:textSize="@dimen/_12ssp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/ed_notice_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    app:boxBackgroundColor="@color/white"
+                    app:boxBackgroundMode="outline"
+                    app:boxCornerRadiusBottomEnd="@dimen/_2sdp"
+                    app:boxCornerRadiusBottomStart="@dimen/_2sdp"
+                    app:boxCornerRadiusTopEnd="@dimen/_2sdp"
+                    app:boxCornerRadiusTopStart="@dimen/_2sdp"
+                    app:boxStrokeColor="@color/borderColor"
+                    app:boxStrokeWidth="0.6dp"
+                    app:endIconMode="clear_text"
+                    app:hintEnabled="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tv_notice_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/roboto"
+                        android:hint="Ex. Scalar and Vector"
+                        android:maxLength="50"
+                        android:padding="@dimen/_4sdp"
+                        android:singleLine="true"
+                        android:textColorHint="@color/lightTextColor"
+                        android:textSize="@dimen/_13ssp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/et_first_name2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/roboto"
+                    android:paddingEnd="@dimen/_6sdp"
+                    android:text="Assigned By"
+                    android:textColor="@color/deepTextColor"
+                    android:textSize="@dimen/_12ssp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/ed_notice_title2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    app:boxBackgroundColor="@color/white"
+                    app:boxBackgroundMode="outline"
+                    app:boxCornerRadiusBottomEnd="@dimen/_2sdp"
+                    app:boxCornerRadiusBottomStart="@dimen/_2sdp"
+                    app:boxCornerRadiusTopEnd="@dimen/_2sdp"
+                    app:boxCornerRadiusTopStart="@dimen/_2sdp"
+                    app:boxStrokeColor="@color/borderColor"
+                    app:boxStrokeWidth="0.6dp"
+                    app:endIconMode="clear_text"
+                    app:hintEnabled="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tv_notice_title2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/roboto"
+                        android:hint="Ex. Durga Shankar"
+                        android:maxLength="50"
+                        android:padding="@dimen/_4sdp"
+                        android:singleLine="true"
+                        android:textColorHint="@color/lightTextColor"
+                        android:textSize="@dimen/_13ssp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/et_first_name3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/roboto"
+                    android:paddingEnd="@dimen/_6sdp"
+                    android:text="Credit"
+                    android:textColor="@color/deepTextColor"
+                    android:textSize="@dimen/_12ssp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/ed_notice_title3"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    app:boxBackgroundColor="@color/white"
+                    app:boxBackgroundMode="outline"
+                    app:boxCornerRadiusBottomEnd="@dimen/_2sdp"
+                    app:boxCornerRadiusBottomStart="@dimen/_2sdp"
+                    app:boxCornerRadiusTopEnd="@dimen/_2sdp"
+                    app:boxCornerRadiusTopStart="@dimen/_2sdp"
+                    app:boxStrokeColor="@color/borderColor"
+                    app:boxStrokeWidth="0.6dp"
+                    app:endIconMode="clear_text"
+                    app:hintEnabled="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/roboto"
+                        android:hint="10"
+                        android:maxLength="50"
+                        android:padding="@dimen/_4sdp"
+                        android:singleLine="true"
+                        android:textColorHint="@color/lightTextColor"
+                        android:textSize="@dimen/_13ssp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/roboto"
+                    android:paddingEnd="@dimen/_6sdp"
+                    android:text="Question Files"
+                    android:textColor="@color/deepTextColor"
+                    android:textSize="@dimen/_12ssp" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/roboto"
+                            android:text="No File Chosen:"
+                            android:textColor="@color/lightTextColor"
+                            android:textSize="@dimen/_12ssp" />
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="@dimen/_70sdp"
+                            android:layout_height="@dimen/_26sdp"
+                            android:layout_gravity="center_vertical|center"
+                            android:layout_margin="@dimen/_2sdp"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            app:cardBackgroundColor="@color/backgroundColor"
+                            app:cardCornerRadius="@dimen/_10sdp"
+                            app:cardElevation="1dp">
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="@dimen/_14sdp"
+                                    android:layout_height="@dimen/_14sdp"
+                                    android:layout_marginStart="@dimen/_6sdp"
+                                    android:src="@drawable/ic_baseline_cloud_upload_24" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/_4sdp"
+                                    android:fontFamily="@font/roboto_medium"
+                                    android:gravity="center_vertical"
+                                    android:includeFontPadding="false"
+                                    android:text="Upload"
+                                    android:textColor="@color/lightTextColor"
+                                    android:textSize="@dimen/_12sdp" />
+
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                        </androidx.cardview.widget.CardView>
+
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto"
+                        android:text="Publish Date"
+                        android:textColor="@color/deepTextColor"
+                        android:textSize="@dimen/_12ssp" />
+
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:background="@drawable/background_outline"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/_14sdp"
+                            android:layout_height="@dimen/_14sdp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/_2sdp"
+                            android:src="@drawable/baseline_calendar_month_icon" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/roboto"
+                            android:text="mm/ dd/ yyyy"
+                            android:textSize="@dimen/_12ssp" />
+
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto"
+                        android:text="Due Date"
+                        android:textColor="@color/deepTextColor"
+                        android:textSize="@dimen/_12ssp" />
+
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:background="@drawable/background_outline"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/_14sdp"
+                            android:layout_height="@dimen/_14sdp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/baseline_calendar_month_icon" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/roboto"
+                            android:text="mm/ dd/ yyyy"
+                            android:textSize="@dimen/_12ssp" />
+
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:text="Description"
+                    android:textColor="@color/deepTextColor"
+                    android:textSize="@dimen/_12ssp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    app:boxBackgroundColor="@color/white"
+                    app:boxBackgroundMode="outline"
+                    app:boxCornerRadiusBottomEnd="@dimen/_2sdp"
+                    app:boxCornerRadiusBottomStart="@dimen/_2sdp"
+                    app:boxCornerRadiusTopEnd="@dimen/_2sdp"
+                    app:boxCornerRadiusTopStart="@dimen/_2sdp"
+                    app:boxStrokeColor="@color/borderColor"
+                    app:boxStrokeWidth="0.6dp"
+                    app:endIconMode="clear_text"
+                    app:hintEnabled="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tv_about_course"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/roboto"
+                        android:gravity="start"
+                        android:hint="Short Description"
+                        android:maxLength="200"
+                        android:padding="@dimen/_4sdp"
+                        android:textColorHint="@color/lightTextColor"
+                        android:textSize="@dimen/_13ssp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/save_btn"
+                android:layout_width="@dimen/_180sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:text="Create"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12ssp"
+                app:backgroundTint="@color/themeColor"
+                app:cornerRadius="@dimen/_4sdp"
+                app:rippleColor="#50224C98" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="backgroundColor">#f2f2f2</color>
+    <color name="borderColor">#D3D3D3</color>
+    <color name="deepTextColor">#1b1e24</color>
+    <color name="lightTextColor">#5e5d5d</color>
+    <color name="themeColor">#207ef5</color>
+
+    <color name="themeColorTint">#E3E9F2</color>
+
+    <color name="borderColorLight">#e8e8e8</color>
+
+    <color name="blue">#3251FF</color>
+
+    <color name="mtrl_textinput_default_box_stroke_color" tools:override="true">#D3D3D3</color>
+    <color name="below_1_40">#FE670A</color>
+    <color name="below_40_80">#FED000</color>
+    <color name="below_80_100">#34c637</color>
+    <color name="theme_color">#207EF5</color>
+    <color name="progressBar_theme_color_lighter">#C7DFFC</color>
+
+
+
+
+
+    <color name="whatsapp_nuOfMsg_bg">#25d466</color>
+    <color name="whatsapp_chat_bg">#e7ffdb</color>
+    <color name="whatsapp_time_txt_color">#24a558</color>
+    <color name="whatsapp_send_btn">#00a884</color>
+
+
+    <color name="whatsapp_seen_ticcolor">#0d9bd4</color>
+
+</resources>

@@ -1,0 +1,70 @@
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/_10sdp"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:layout_marginBottom="@dimen/_5sdp"
+    android:background="@color/backgroundColor"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="@dimen/_8sdp"
+    app:strokeColor="@color/borderColor"
+    app:strokeWidth="0.8dp"
+    tools:context=".Video_section">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:orientation="vertical">
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_160sdp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="@dimen/_8sdp"
+            app:cardElevation="@dimen/_1sdp"
+            app:strokeWidth="0dp">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/video" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:ellipsize="end"
+            android:fontFamily="@font/roboto_medium"
+            android:includeFontPadding="false"
+            android:maxLines="2"
+            android:text="What is Atom, Compound, Element ?"
+            android:textColor="@color/deepTextColor"
+            android:textSize="@dimen/_14ssp" />
+
+
+        <com.codesgood.views.JustifiedTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:ellipsize="end"
+            android:fontFamily="@font/roboto"
+            android:includeFontPadding="false"
+            android:lineHeight="@dimen/_20sdp"
+            android:maxLines="3"
+            android:text="@string/an_atom_is_a_particle_of_matter_that_uniquely_defines_a_chemical_element_an_atom_consists_of_a_central_nucleus_that_is_surrounded_by_one_or_more_negatively_charged_electrons"
+            android:textColor="@color/lightTextColor"
+            android:textSize="@dimen/_13ssp" />
+
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

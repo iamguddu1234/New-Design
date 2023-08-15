@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">New_Pages</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="demo_text">More than 6 years of experience in analyzing physics data using high level computer programming languages (C++,python etc. ) and Advanced statistical methods produced from the `most complex machine` ever built by humans [LHC, CERN, Geneva] and certified by reputed universities/institutes.</string>
+    <string name="myaddress">Akshay Bhasme, Ward No : 3, Sonegaon Road, Home Number 14, Chandur Railway, Dist - Amravati, Pin Code 444904, State - Maharashtra</string>
+    <string name="an_atom_is_a_particle_of_matter_that_uniquely_defines_a_chemical_element_an_atom_consists_of_a_central_nucleus_that_is_surrounded_by_one_or_more_negatively_charged_electrons">An atom is a particle of matter that uniquely defines a chemical element. An atom consists of a central nucleus that is surrounded by one or more negatively charged electrons. An atom is a particle of matter that uniquely defines a chemical element. An atom consists of a central nucleus that is surrounded by one or more negatively charged electrons. An atom is a particle of matter that uniquely defines a chemical element. An atom consists of a central nucleus that is surrounded by one or more negatively charged electrons.</string>
+    ========================================================================================================================
+
+
+</resources>

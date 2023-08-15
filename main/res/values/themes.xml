@@ -1,0 +1,83 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.New_Pages" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+         <item name="colorPrimary">@color/theme_color</item>
+        <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
+
+    </style>
+
+    <style name="Theme.New_Pages" parent="Base.Theme.New_Pages" />
+
+
+    <style name="CustomCardCorners_3" parent="@style/Widget.MaterialComponents.CardView">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance_custom_corners_3</item>
+    </style>
+
+    <style name="ShapeAppearance_custom_corners_3" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">@dimen/_30sdp</item>
+        <item name="cornerSizeTopRight">@dimen/_30sdp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+    </style>
+
+
+    <style name="CustomCardCorners_4" parent="@style/Widget.MaterialComponents.CardView">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance_custom_corners_4</item>
+    </style>
+
+    <style name="ShapeAppearance_custom_corners_4" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">@dimen/_10sdp</item>
+        <item name="cornerSizeTopRight">@dimen/_10sdp</item>
+        <item name="cornerSizeBottomRight">@dimen/_10sdp</item>
+        <item name="cornerSizeBottomLeft">@dimen/_10sdp</item>
+    </style>
+
+
+
+    <style name="AppBottomSheetDialogTheme"
+        parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+    </style>
+
+    <style name="AppModalStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/bottom_sheet_background</item>
+        <item name="android:tint">@android:color/transparent</item>
+    </style>
+
+
+    <style name="CalenderViewCustom" parent="CardView.Light">
+        <item name="colorControlActivated">@color/theme_color</item>
+
+        <item name="android:textColorPrimaryInverse">@color/white</item>
+
+
+
+
+
+    </style>
+
+    <style name="CalenderViewDateCustomText" parent="android:TextAppearance.DeviceDefault.Small">
+        <item name="android:textColor">@color/deepTextColor</item>
+    </style>
+
+    <style name="CalenderViewWeekCustomText" parent="android:TextAppearance.DeviceDefault.Small">
+        <item name="android:textColor">@color/theme_color</item>
+        <item name="android:textSize">@dimen/_13ssp</item>
+        <item name="fontFamily">@font/roboto_medium</item>
+
+    </style>
+
+
+
+    <style name="CalendarDateTextAppearance">
+        <item name="android:textColor">@color/white</item> <!-- Set the default date text color -->
+    </style>
+    <style name="SelectedCalendarDateTextAppearance" parent="@style/CalendarDateTextAppearance">
+        <item name="android:textColor">@color/theme_color</item> <!-- Set the selected date text color -->
+        <item name="android:background">@color/theme_color</item> <!-- Set the selected date background color -->
+    </style>
+
+</resources>

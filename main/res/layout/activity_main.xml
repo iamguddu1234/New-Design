@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="@dimen/_20sdp"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="assignmentCard"
+        android:text="Assignment Card"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12ssp" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:onClick="assignmentform"
+        android:text="Assignment form"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12ssp" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:onClick="summary"
+        android:text="Summary"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12ssp" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:onClick="publicProfile"
+        android:text="Public Profile"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12ssp" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:onClick="privateProfile"
+        android:text="Private Profile"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12ssp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:onClick="More"
+        android:text="More"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12ssp" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:onClick="cal"
+        android:text="Calendar"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12ssp" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:onClick="std"
+        android:text="Students"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12ssp" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:onClick="vdt"
+        android:text="Video"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12ssp" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:onClick="cfiles"
+        android:text="Files"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12ssp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:onClick="courseCard"
+        android:text="Course Card"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12ssp" />
+
+
+</LinearLayout>
