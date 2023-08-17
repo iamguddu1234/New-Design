@@ -114,4 +114,14 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, Course_card_activity.class);
         startActivity(intent);
     }
+
+    public void onClickFeed(View view) {
+        Intent intent = new Intent(MainActivity.this, Feed.class);
+        startActivity(intent);
+    }
+
+    public void go_setting(View view) {
+        Intent intent = new Intent(MainActivity.this, Setting_Page.class);
+        startActivity(intent);
+    }
 }

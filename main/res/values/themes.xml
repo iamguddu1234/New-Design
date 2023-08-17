@@ -80,4 +80,11 @@
         <item name="android:background">@color/theme_color</item> <!-- Set the selected date background color -->
     </style>
 
+
+    <style name="SwitchTextAppearance" parent="@android:style/TextAppearance.Holo.Small">
+        <item name="android:textColor">@drawable/text_color_selector</item>
+        <item name="android:textSize">@dimen/_10ssp</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
 </resources>
