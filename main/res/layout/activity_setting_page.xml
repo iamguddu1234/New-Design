@@ -4,129 +4,45 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/backgroundColor"
+    android:orientation="vertical"
     tools:context=".Setting_Page">
-
 
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/_14ssp"
-        android:fontFamily="@font/roboto_medium"
-        android:textColor="@color/lightTextColor"
-        android:text="Account :"
-        android:layout_marginTop="@dimen/_10sdp"
         android:layout_marginHorizontal="@dimen/_20sdp"
-        android:includeFontPadding="false"/>
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/roboto_medium"
+        android:includeFontPadding="false"
+        android:text="Account :"
+        android:textColor="@color/lightTextColor"
+        android:textSize="@dimen/_14ssp" />
 
 
     <com.google.android.material.card.MaterialCardView
-        android:layout_margin="@dimen/_10sdp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardCornerRadius="@dimen/_10sdp"
+        android:layout_margin="@dimen/_10sdp"
         app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/_10sdp"
         app:cardElevation="0dp"
-        app:strokeWidth="0.3dp"
-        app:strokeColor="@color/borderColorLight">
+        app:strokeColor="@color/borderColorLight"
+        app:strokeWidth="0.3dp">
 
         <LinearLayout
-            android:layout_margin="@dimen/_10sdp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
             android:orientation="vertical">
 
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_30sdp"
-                app:cardElevation="0dp"
                 app:cardBackgroundColor="@color/white"
                 app:cardCornerRadius="0dp"
-                app:strokeWidth="0dp">
-
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal">
-
-                        <com.google.android.material.card.MaterialCardView
-                            android:layout_margin="@dimen/_5sdp"
-                            android:layout_width="@dimen/_20sdp"
-                            android:layout_height="@dimen/_20sdp"
-                            app:cardCornerRadius="@dimen/_50sdp"
-                            app:cardBackgroundColor="@color/white"
-                            app:cardElevation="0dp"
-                            app:strokeWidth="0.3dp"
-                            app:strokeColor="@color/borderColorLight">
-
-
-                            <ImageView
-                                android:layout_gravity="center"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:src="@drawable/baseline_email_24_dark"
-                                app:tint="@color/lightTextColor" />
-
-                        </com.google.android.material.card.MaterialCardView>
-
-
-                        <TextView
-                            android:layout_weight="1"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Change Password"
-                            android:fontFamily="@font/roboto"
-                            android:layout_gravity="center_vertical"
-                            android:includeFontPadding="false"
-                            android:textSize="@dimen/_12ssp"/>
-
-
-                        <com.google.android.material.card.MaterialCardView
-                            android:layout_gravity="center_vertical"
-                            android:layout_width="@dimen/_25sdp"
-                            android:layout_height="@dimen/_25sdp"
-                            app:cardElevation="0dp"
-                            app:cardBackgroundColor="@color/white"
-                            app:cardCornerRadius="@dimen/_50sdp"
-                            app:strokeWidth="0.8dp"
-                            app:strokeColor="@color/borderColorLight">
-
-
-                            <ImageView
-                                android:padding="@dimen/_4sdp"
-                                android:layout_gravity="center"
-                                android:layout_width="@dimen/_20sdp"
-                                android:layout_height="@dimen/_20sdp"
-                                android:src="@drawable/baseline_arrow_forward_ios_24"
-                                app:tint="@color/lightTextColor" />
-
-                        </com.google.android.material.card.MaterialCardView>
-
-
-                    </LinearLayout>
-
-
-
-
-
-            </com.google.android.material.card.MaterialCardView>
-
-
-            <View
-                android:layout_marginVertical="@dimen/_5sdp"
-                android:layout_width="match_parent"
-                android:layout_height="0.8dp"
-                android:background="@color/borderColorLight"/>
-
-            <com.google.android.material.card.MaterialCardView
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/_30sdp"
                 app:cardElevation="0dp"
-                app:cardBackgroundColor="@color/white"
-                app:cardCornerRadius="0dp"
                 app:strokeWidth="0dp">
 
 
@@ -135,54 +51,112 @@
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
 
-                    <com.google.android.material.card.MaterialCardView
-                        android:layout_margin="@dimen/_5sdp"
+
+                    <ImageView
                         android:layout_width="@dimen/_20sdp"
                         android:layout_height="@dimen/_20sdp"
-                        app:cardCornerRadius="@dimen/_50sdp"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:src="@drawable/baseline_password_24"
+                        app:tint="@color/lightTextColor" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/roboto"
+                        android:includeFontPadding="false"
+                        android:text="Change Password"
+                        android:textSize="@dimen/_12ssp" />
+
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_gravity="center_vertical"
                         app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/_50sdp"
                         app:cardElevation="0dp"
-                        app:strokeWidth="0.3dp"
-                        app:strokeColor="@color/borderColorLight">
+                        app:strokeColor="@color/borderColorLight"
+                        app:strokeWidth="0.8dp">
 
 
                         <ImageView
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
                             android:layout_gravity="center"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:src="@drawable/baseline_email_24_dark"
+                            android:padding="@dimen/_4sdp"
+                            android:src="@drawable/baseline_arrow_forward_ios_24"
                             app:tint="@color/lightTextColor" />
 
                     </com.google.android.material.card.MaterialCardView>
 
 
+                </LinearLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:layout_marginVertical="@dimen/_5sdp"
+                android:background="@color/borderColorLight" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="0dp"
+                app:cardElevation="0dp"
+                app:strokeWidth="0dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:src="@drawable/baseline_person_24"
+                        app:tint="@color/lightTextColor" />
+
+
                     <TextView
-                        android:layout_weight="1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/roboto"
+                        android:includeFontPadding="false"
                         android:text="Change Username"
-                        android:fontFamily="@font/roboto"
-                        android:layout_gravity="center_vertical"
-                        android:includeFontPadding="false"
-                        android:textSize="@dimen/_12ssp"/>
+                        android:textSize="@dimen/_12ssp" />
 
 
                     <com.google.android.material.card.MaterialCardView
-                        android:layout_gravity="center_vertical"
                         android:layout_width="@dimen/_25sdp"
                         android:layout_height="@dimen/_25sdp"
-                        app:cardElevation="0dp"
+                        android:layout_gravity="center_vertical"
                         app:cardBackgroundColor="@color/white"
                         app:cardCornerRadius="@dimen/_50sdp"
-                        app:strokeWidth="0.8dp"
-                        app:strokeColor="@color/borderColorLight">
+                        app:cardElevation="0dp"
+                        app:strokeColor="@color/borderColorLight"
+                        app:strokeWidth="0.8dp">
 
 
                         <ImageView
-                            android:padding="@dimen/_4sdp"
-                            android:layout_gravity="center"
                             android:layout_width="@dimen/_20sdp"
                             android:layout_height="@dimen/_20sdp"
+                            android:layout_gravity="center"
+                            android:padding="@dimen/_4sdp"
                             android:src="@drawable/baseline_arrow_forward_ios_24"
                             app:tint="@color/lightTextColor" />
 
@@ -192,24 +166,21 @@
                 </LinearLayout>
 
 
-
-
-
             </com.google.android.material.card.MaterialCardView>
 
 
             <View
-                android:layout_marginVertical="@dimen/_5sdp"
                 android:layout_width="match_parent"
                 android:layout_height="0.8dp"
-                android:background="@color/borderColorLight"/>
+                android:layout_marginVertical="@dimen/_5sdp"
+                android:background="@color/borderColorLight" />
 
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_30sdp"
-                app:cardElevation="0dp"
                 app:cardBackgroundColor="@color/white"
                 app:cardCornerRadius="0dp"
+                app:cardElevation="0dp"
                 app:strokeWidth="0dp">
 
 
@@ -218,54 +189,43 @@
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
 
-                    <com.google.android.material.card.MaterialCardView
-                        android:layout_margin="@dimen/_5sdp"
+
+                    <ImageView
                         android:layout_width="@dimen/_20sdp"
                         android:layout_height="@dimen/_20sdp"
-                        app:cardCornerRadius="@dimen/_50sdp"
-                        app:cardBackgroundColor="@color/white"
-                        app:cardElevation="0dp"
-                        app:strokeWidth="0.3dp"
-                        app:strokeColor="@color/borderColorLight">
-
-
-                        <ImageView
-                            android:layout_gravity="center"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:src="@drawable/baseline_email_24_dark"
-                            app:tint="@color/lightTextColor" />
-
-                    </com.google.android.material.card.MaterialCardView>
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:src="@drawable/baseline_email_24_dark"
+                        app:tint="@color/lightTextColor" />
 
 
                     <TextView
-                        android:layout_weight="1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/roboto"
+                        android:includeFontPadding="false"
                         android:text="Change Email"
-                        android:fontFamily="@font/roboto"
-                        android:layout_gravity="center_vertical"
-                        android:includeFontPadding="false"
-                        android:textSize="@dimen/_12ssp"/>
+                        android:textSize="@dimen/_12ssp" />
 
 
                     <com.google.android.material.card.MaterialCardView
-                        android:layout_gravity="center_vertical"
                         android:layout_width="@dimen/_25sdp"
                         android:layout_height="@dimen/_25sdp"
-                        app:cardElevation="0dp"
+                        android:layout_gravity="center_vertical"
                         app:cardBackgroundColor="@color/white"
                         app:cardCornerRadius="@dimen/_50sdp"
-                        app:strokeWidth="0.8dp"
-                        app:strokeColor="@color/borderColorLight">
+                        app:cardElevation="0dp"
+                        app:strokeColor="@color/borderColorLight"
+                        app:strokeWidth="0.8dp">
 
 
                         <ImageView
-                            android:padding="@dimen/_4sdp"
-                            android:layout_gravity="center"
                             android:layout_width="@dimen/_20sdp"
                             android:layout_height="@dimen/_20sdp"
+                            android:layout_gravity="center"
+                            android:padding="@dimen/_4sdp"
                             android:src="@drawable/baseline_arrow_forward_ios_24"
                             app:tint="@color/lightTextColor" />
 
@@ -275,24 +235,21 @@
                 </LinearLayout>
 
 
-
-
-
             </com.google.android.material.card.MaterialCardView>
 
 
             <View
-                android:layout_marginVertical="@dimen/_5sdp"
                 android:layout_width="match_parent"
                 android:layout_height="0.8dp"
-                android:background="@color/borderColorLight"/>
+                android:layout_marginVertical="@dimen/_5sdp"
+                android:background="@color/borderColorLight" />
 
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_30sdp"
-                app:cardElevation="0dp"
                 app:cardBackgroundColor="@color/white"
                 app:cardCornerRadius="0dp"
+                app:cardElevation="0dp"
                 app:strokeWidth="0dp">
 
 
@@ -301,54 +258,43 @@
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
 
-                    <com.google.android.material.card.MaterialCardView
-                        android:layout_margin="@dimen/_5sdp"
+
+                    <ImageView
                         android:layout_width="@dimen/_20sdp"
                         android:layout_height="@dimen/_20sdp"
-                        app:cardCornerRadius="@dimen/_50sdp"
-                        app:cardBackgroundColor="@color/white"
-                        app:cardElevation="0dp"
-                        app:strokeWidth="0.3dp"
-                        app:strokeColor="@color/borderColorLight">
-
-
-                        <ImageView
-                            android:layout_gravity="center"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:src="@drawable/baseline_email_24_dark"
-                            app:tint="@color/lightTextColor" />
-
-                    </com.google.android.material.card.MaterialCardView>
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:src="@drawable/baseline_smartphone_24"
+                        app:tint="@color/lightTextColor" />
 
 
                     <TextView
-                        android:layout_weight="1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Change Phone Number"
-                        android:fontFamily="@font/roboto"
                         android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/roboto"
                         android:includeFontPadding="false"
-                        android:textSize="@dimen/_12ssp"/>
+                        android:text="Change Phone Number"
+                        android:textSize="@dimen/_12ssp" />
 
 
                     <com.google.android.material.card.MaterialCardView
-                        android:layout_gravity="center_vertical"
                         android:layout_width="@dimen/_25sdp"
                         android:layout_height="@dimen/_25sdp"
-                        app:cardElevation="0dp"
+                        android:layout_gravity="center_vertical"
                         app:cardBackgroundColor="@color/white"
                         app:cardCornerRadius="@dimen/_50sdp"
-                        app:strokeWidth="0.8dp"
-                        app:strokeColor="@color/borderColorLight">
+                        app:cardElevation="0dp"
+                        app:strokeColor="@color/borderColorLight"
+                        app:strokeWidth="0.8dp">
 
 
                         <ImageView
-                            android:padding="@dimen/_4sdp"
-                            android:layout_gravity="center"
                             android:layout_width="@dimen/_20sdp"
                             android:layout_height="@dimen/_20sdp"
+                            android:layout_gravity="center"
+                            android:padding="@dimen/_4sdp"
                             android:src="@drawable/baseline_arrow_forward_ios_24"
                             app:tint="@color/lightTextColor" />
 
@@ -358,19 +304,10 @@
                 </LinearLayout>
 
 
-
-
-
             </com.google.android.material.card.MaterialCardView>
-
-
-
-
-
 
 
         </LinearLayout>
-
 
 
     </com.google.android.material.card.MaterialCardView>
@@ -378,37 +315,37 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/_14ssp"
-        android:fontFamily="@font/roboto_medium"
-        android:textColor="@color/lightTextColor"
-        android:text="Notifications :"
-        android:layout_marginTop="@dimen/_10sdp"
         android:layout_marginHorizontal="@dimen/_20sdp"
-        android:includeFontPadding="false"/>
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/roboto_medium"
+        android:includeFontPadding="false"
+        android:text="Notify Me On :"
+        android:textColor="@color/lightTextColor"
+        android:textSize="@dimen/_14ssp" />
 
 
     <com.google.android.material.card.MaterialCardView
-        android:layout_margin="@dimen/_10sdp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardCornerRadius="@dimen/_10sdp"
+        android:layout_margin="@dimen/_10sdp"
         app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/_10sdp"
         app:cardElevation="0dp"
-        app:strokeWidth="0.3dp"
-        app:strokeColor="@color/borderColorLight">
+        app:strokeColor="@color/borderColorLight"
+        app:strokeWidth="0.3dp">
 
         <LinearLayout
-            android:layout_margin="@dimen/_10sdp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
             android:orientation="vertical">
 
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_30sdp"
-                app:cardElevation="0dp"
                 app:cardBackgroundColor="@color/white"
                 app:cardCornerRadius="0dp"
+                app:cardElevation="0dp"
                 app:strokeWidth="0dp">
 
 
@@ -417,47 +354,36 @@
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
 
-                    <com.google.android.material.card.MaterialCardView
-                        android:layout_margin="@dimen/_5sdp"
+
+                    <ImageView
                         android:layout_width="@dimen/_20sdp"
                         android:layout_height="@dimen/_20sdp"
-                        app:cardCornerRadius="@dimen/_50sdp"
-                        app:cardBackgroundColor="@color/white"
-                        app:cardElevation="0dp"
-                        app:strokeWidth="0.3dp"
-                        app:strokeColor="@color/borderColorLight">
-
-
-                        <ImageView
-                            android:layout_gravity="center"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:src="@drawable/baseline_email_24_dark"
-                            app:tint="@color/lightTextColor" />
-
-                    </com.google.android.material.card.MaterialCardView>
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:src="@drawable/baseline_ballot_24"
+                        app:tint="@color/lightTextColor" />
 
 
                     <TextView
-                        android:layout_weight="1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="New Enrollment"
-                        android:fontFamily="@font/roboto"
                         android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/roboto"
                         android:includeFontPadding="false"
-                        android:textSize="@dimen/_12ssp"/>
+                        android:text="New Enrollment Request"
+                        android:textSize="@dimen/_12ssp" />
 
 
                     <com.google.android.material.card.MaterialCardView
-                        android:layout_gravity="center_vertical"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        app:cardElevation="0dp"
+                        android:layout_gravity="center_vertical"
                         app:cardBackgroundColor="@color/white"
                         app:cardCornerRadius="0dp"
-                        app:strokeWidth="0dp"
-                        app:strokeColor="@color/borderColorLight">
+                        app:cardElevation="0dp"
+                        app:strokeColor="@color/borderColorLight"
+                        app:strokeWidth="0dp">
 
 
                         <androidx.appcompat.widget.SwitchCompat
@@ -481,24 +407,21 @@
                 </LinearLayout>
 
 
-
-
-
             </com.google.android.material.card.MaterialCardView>
 
 
             <View
-                android:layout_marginVertical="@dimen/_5sdp"
                 android:layout_width="match_parent"
                 android:layout_height="0.8dp"
-                android:background="@color/borderColorLight"/>
+                android:layout_marginVertical="@dimen/_5sdp"
+                android:background="@color/borderColorLight" />
 
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_30sdp"
-                app:cardElevation="0dp"
                 app:cardBackgroundColor="@color/white"
                 app:cardCornerRadius="0dp"
+                app:cardElevation="0dp"
                 app:strokeWidth="0dp">
 
 
@@ -507,56 +430,51 @@
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
 
-                    <com.google.android.material.card.MaterialCardView
-                        android:layout_margin="@dimen/_5sdp"
+
+                    <ImageView
                         android:layout_width="@dimen/_20sdp"
                         android:layout_height="@dimen/_20sdp"
-                        app:cardCornerRadius="@dimen/_50sdp"
-                        app:cardBackgroundColor="@color/white"
-                        app:cardElevation="0dp"
-                        app:strokeWidth="0.3dp"
-                        app:strokeColor="@color/borderColorLight">
-
-
-                        <ImageView
-                            android:layout_gravity="center"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:src="@drawable/baseline_email_24_dark"
-                            app:tint="@color/lightTextColor" />
-
-                    </com.google.android.material.card.MaterialCardView>
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:src="@drawable/baseline_video_chat_24"
+                        app:tint="@color/lightTextColor" />
 
 
                     <TextView
-                        android:layout_weight="1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/roboto"
+                        android:includeFontPadding="false"
                         android:text="New Meeting"
-                        android:fontFamily="@font/roboto"
-                        android:layout_gravity="center_vertical"
-                        android:includeFontPadding="false"
-                        android:textSize="@dimen/_12ssp"/>
+                        android:textSize="@dimen/_12ssp" />
 
 
                     <com.google.android.material.card.MaterialCardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
-                        android:layout_width="@dimen/_25sdp"
-                        android:layout_height="@dimen/_25sdp"
-                        app:cardElevation="0dp"
                         app:cardBackgroundColor="@color/white"
-                        app:cardCornerRadius="@dimen/_50sdp"
-                        app:strokeWidth="0.8dp"
-                        app:strokeColor="@color/borderColorLight">
+                        app:cardCornerRadius="0dp"
+                        app:cardElevation="0dp"
+                        app:strokeColor="@color/borderColorLight"
+                        app:strokeWidth="0dp">
 
 
-                        <ImageView
-                            android:padding="@dimen/_4sdp"
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
                             android:layout_gravity="center"
-                            android:layout_width="@dimen/_20sdp"
-                            android:layout_height="@dimen/_20sdp"
-                            android:src="@drawable/baseline_arrow_forward_ios_24"
-                            app:tint="@color/lightTextColor" />
+                            android:checked="false"
+                            android:textAllCaps="false"
+                            android:textOff="Off"
+                            android:textOn="On"
+                            android:textSize="@dimen/_15ssp"
+                            android:thumb="@drawable/thumb_selector"
+                            app:showText="true"
+                            app:switchTextAppearance="@style/SwitchTextAppearance"
+                            app:track="@drawable/track_selector" />
 
                     </com.google.android.material.card.MaterialCardView>
 
@@ -564,24 +482,21 @@
                 </LinearLayout>
 
 
-
-
-
             </com.google.android.material.card.MaterialCardView>
 
 
             <View
-                android:layout_marginVertical="@dimen/_5sdp"
                 android:layout_width="match_parent"
                 android:layout_height="0.8dp"
-                android:background="@color/borderColorLight"/>
+                android:layout_marginVertical="@dimen/_5sdp"
+                android:background="@color/borderColorLight" />
 
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_30sdp"
-                app:cardElevation="0dp"
                 app:cardBackgroundColor="@color/white"
                 app:cardCornerRadius="0dp"
+                app:cardElevation="0dp"
                 app:strokeWidth="0dp">
 
 
@@ -590,56 +505,51 @@
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
 
-                    <com.google.android.material.card.MaterialCardView
-                        android:layout_margin="@dimen/_5sdp"
+
+                    <ImageView
                         android:layout_width="@dimen/_20sdp"
                         android:layout_height="@dimen/_20sdp"
-                        app:cardCornerRadius="@dimen/_50sdp"
-                        app:cardBackgroundColor="@color/white"
-                        app:cardElevation="0dp"
-                        app:strokeWidth="0.3dp"
-                        app:strokeColor="@color/borderColorLight">
-
-
-                        <ImageView
-                            android:layout_gravity="center"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:src="@drawable/baseline_email_24_dark"
-                            app:tint="@color/lightTextColor" />
-
-                    </com.google.android.material.card.MaterialCardView>
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:src="@drawable/baseline_laptop_chromebook_24"
+                        app:tint="@color/lightTextColor" />
 
 
                     <TextView
-                        android:layout_weight="1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/roboto"
+                        android:includeFontPadding="false"
                         android:text="New Class"
-                        android:fontFamily="@font/roboto"
-                        android:layout_gravity="center_vertical"
-                        android:includeFontPadding="false"
-                        android:textSize="@dimen/_12ssp"/>
+                        android:textSize="@dimen/_12ssp" />
 
 
                     <com.google.android.material.card.MaterialCardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
-                        android:layout_width="@dimen/_25sdp"
-                        android:layout_height="@dimen/_25sdp"
-                        app:cardElevation="0dp"
                         app:cardBackgroundColor="@color/white"
-                        app:cardCornerRadius="@dimen/_50sdp"
-                        app:strokeWidth="0.8dp"
-                        app:strokeColor="@color/borderColorLight">
+                        app:cardCornerRadius="0dp"
+                        app:cardElevation="0dp"
+                        app:strokeColor="@color/borderColorLight"
+                        app:strokeWidth="0dp">
 
 
-                        <ImageView
-                            android:padding="@dimen/_4sdp"
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
                             android:layout_gravity="center"
-                            android:layout_width="@dimen/_20sdp"
-                            android:layout_height="@dimen/_20sdp"
-                            android:src="@drawable/baseline_arrow_forward_ios_24"
-                            app:tint="@color/lightTextColor" />
+                            android:checked="false"
+                            android:textAllCaps="false"
+                            android:textOff="Off"
+                            android:textOn="On"
+                            android:textSize="@dimen/_15ssp"
+                            android:thumb="@drawable/thumb_selector"
+                            app:showText="true"
+                            app:switchTextAppearance="@style/SwitchTextAppearance"
+                            app:track="@drawable/track_selector" />
 
                     </com.google.android.material.card.MaterialCardView>
 
@@ -647,24 +557,21 @@
                 </LinearLayout>
 
 
-
-
-
             </com.google.android.material.card.MaterialCardView>
 
 
             <View
-                android:layout_marginVertical="@dimen/_5sdp"
                 android:layout_width="match_parent"
                 android:layout_height="0.8dp"
-                android:background="@color/borderColorLight"/>
+                android:layout_marginVertical="@dimen/_5sdp"
+                android:background="@color/borderColorLight" />
 
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_30sdp"
-                app:cardElevation="0dp"
                 app:cardBackgroundColor="@color/white"
                 app:cardCornerRadius="0dp"
+                app:cardElevation="0dp"
                 app:strokeWidth="0dp">
 
 
@@ -673,56 +580,51 @@
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
 
-                    <com.google.android.material.card.MaterialCardView
-                        android:layout_margin="@dimen/_5sdp"
+
+                    <ImageView
                         android:layout_width="@dimen/_20sdp"
                         android:layout_height="@dimen/_20sdp"
-                        app:cardCornerRadius="@dimen/_50sdp"
-                        app:cardBackgroundColor="@color/white"
-                        app:cardElevation="0dp"
-                        app:strokeWidth="0.3dp"
-                        app:strokeColor="@color/borderColorLight">
-
-
-                        <ImageView
-                            android:layout_gravity="center"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:src="@drawable/baseline_email_24_dark"
-                            app:tint="@color/lightTextColor" />
-
-                    </com.google.android.material.card.MaterialCardView>
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:src="@drawable/baseline_note_alt_24"
+                        app:tint="@color/lightTextColor" />
 
 
                     <TextView
-                        android:layout_weight="1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/roboto"
+                        android:includeFontPadding="false"
                         android:text="New Exam"
-                        android:fontFamily="@font/roboto"
-                        android:layout_gravity="center_vertical"
-                        android:includeFontPadding="false"
-                        android:textSize="@dimen/_12ssp"/>
+                        android:textSize="@dimen/_12ssp" />
 
 
                     <com.google.android.material.card.MaterialCardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
-                        android:layout_width="@dimen/_25sdp"
-                        android:layout_height="@dimen/_25sdp"
-                        app:cardElevation="0dp"
                         app:cardBackgroundColor="@color/white"
-                        app:cardCornerRadius="@dimen/_50sdp"
-                        app:strokeWidth="0.8dp"
-                        app:strokeColor="@color/borderColorLight">
+                        app:cardCornerRadius="0dp"
+                        app:cardElevation="0dp"
+                        app:strokeColor="@color/borderColorLight"
+                        app:strokeWidth="0dp">
 
 
-                        <ImageView
-                            android:padding="@dimen/_4sdp"
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
                             android:layout_gravity="center"
-                            android:layout_width="@dimen/_20sdp"
-                            android:layout_height="@dimen/_20sdp"
-                            android:src="@drawable/baseline_arrow_forward_ios_24"
-                            app:tint="@color/lightTextColor" />
+                            android:checked="false"
+                            android:textAllCaps="false"
+                            android:textOff="Off"
+                            android:textOn="On"
+                            android:textSize="@dimen/_15ssp"
+                            android:thumb="@drawable/thumb_selector"
+                            app:showText="true"
+                            app:switchTextAppearance="@style/SwitchTextAppearance"
+                            app:track="@drawable/track_selector" />
 
                     </com.google.android.material.card.MaterialCardView>
 
@@ -730,23 +632,20 @@
                 </LinearLayout>
 
 
-
-
-
             </com.google.android.material.card.MaterialCardView>
 
             <View
-                android:layout_marginVertical="@dimen/_5sdp"
                 android:layout_width="match_parent"
                 android:layout_height="0.8dp"
-                android:background="@color/borderColorLight"/>
+                android:layout_marginVertical="@dimen/_5sdp"
+                android:background="@color/borderColorLight" />
 
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_30sdp"
-                app:cardElevation="0dp"
                 app:cardBackgroundColor="@color/white"
                 app:cardCornerRadius="0dp"
+                app:cardElevation="0dp"
                 app:strokeWidth="0dp">
 
 
@@ -755,56 +654,51 @@
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
 
-                    <com.google.android.material.card.MaterialCardView
-                        android:layout_margin="@dimen/_5sdp"
+
+                    <ImageView
                         android:layout_width="@dimen/_20sdp"
                         android:layout_height="@dimen/_20sdp"
-                        app:cardCornerRadius="@dimen/_50sdp"
-                        app:cardBackgroundColor="@color/white"
-                        app:cardElevation="0dp"
-                        app:strokeWidth="0.3dp"
-                        app:strokeColor="@color/borderColorLight">
-
-
-                        <ImageView
-                            android:layout_gravity="center"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:src="@drawable/baseline_email_24_dark"
-                            app:tint="@color/lightTextColor" />
-
-                    </com.google.android.material.card.MaterialCardView>
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:src="@drawable/baseline_wysiwyg_24"
+                        app:tint="@color/lightTextColor" />
 
 
                     <TextView
-                        android:layout_weight="1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/roboto"
+                        android:includeFontPadding="false"
                         android:text="New Notice"
-                        android:fontFamily="@font/roboto"
-                        android:layout_gravity="center_vertical"
-                        android:includeFontPadding="false"
-                        android:textSize="@dimen/_12ssp"/>
+                        android:textSize="@dimen/_12ssp" />
 
 
                     <com.google.android.material.card.MaterialCardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
-                        android:layout_width="@dimen/_25sdp"
-                        android:layout_height="@dimen/_25sdp"
-                        app:cardElevation="0dp"
                         app:cardBackgroundColor="@color/white"
-                        app:cardCornerRadius="@dimen/_50sdp"
-                        app:strokeWidth="0.8dp"
-                        app:strokeColor="@color/borderColorLight">
+                        app:cardCornerRadius="0dp"
+                        app:cardElevation="0dp"
+                        app:strokeColor="@color/borderColorLight"
+                        app:strokeWidth="0dp">
 
 
-                        <ImageView
-                            android:padding="@dimen/_4sdp"
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
                             android:layout_gravity="center"
-                            android:layout_width="@dimen/_20sdp"
-                            android:layout_height="@dimen/_20sdp"
-                            android:src="@drawable/baseline_arrow_forward_ios_24"
-                            app:tint="@color/lightTextColor" />
+                            android:checked="false"
+                            android:textAllCaps="false"
+                            android:textOff="Off"
+                            android:textOn="On"
+                            android:textSize="@dimen/_15ssp"
+                            android:thumb="@drawable/thumb_selector"
+                            app:showText="true"
+                            app:switchTextAppearance="@style/SwitchTextAppearance"
+                            app:track="@drawable/track_selector" />
 
                     </com.google.android.material.card.MaterialCardView>
 
@@ -812,22 +706,20 @@
                 </LinearLayout>
 
 
-
-
-
             </com.google.android.material.card.MaterialCardView>
+
             <View
-                android:layout_marginVertical="@dimen/_5sdp"
                 android:layout_width="match_parent"
                 android:layout_height="0.8dp"
-                android:background="@color/borderColorLight"/>
+                android:layout_marginVertical="@dimen/_5sdp"
+                android:background="@color/borderColorLight" />
 
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_30sdp"
-                app:cardElevation="0dp"
                 app:cardBackgroundColor="@color/white"
                 app:cardCornerRadius="0dp"
+                app:cardElevation="0dp"
                 app:strokeWidth="0dp">
 
 
@@ -836,56 +728,51 @@
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
 
-                    <com.google.android.material.card.MaterialCardView
-                        android:layout_margin="@dimen/_5sdp"
+
+                    <ImageView
                         android:layout_width="@dimen/_20sdp"
                         android:layout_height="@dimen/_20sdp"
-                        app:cardCornerRadius="@dimen/_50sdp"
-                        app:cardBackgroundColor="@color/white"
-                        app:cardElevation="0dp"
-                        app:strokeWidth="0.3dp"
-                        app:strokeColor="@color/borderColorLight">
-
-
-                        <ImageView
-                            android:layout_gravity="center"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:src="@drawable/baseline_email_24_dark"
-                            app:tint="@color/lightTextColor" />
-
-                    </com.google.android.material.card.MaterialCardView>
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:src="@drawable/baseline_list_alt_24"
+                        app:tint="@color/lightTextColor" />
 
 
                     <TextView
-                        android:layout_weight="1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="New Assignment"
-                        android:fontFamily="@font/roboto"
                         android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/roboto"
                         android:includeFontPadding="false"
-                        android:textSize="@dimen/_12ssp"/>
+                        android:text="New Assignment"
+                        android:textSize="@dimen/_12ssp" />
 
 
                     <com.google.android.material.card.MaterialCardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
-                        android:layout_width="@dimen/_25sdp"
-                        android:layout_height="@dimen/_25sdp"
-                        app:cardElevation="0dp"
                         app:cardBackgroundColor="@color/white"
-                        app:cardCornerRadius="@dimen/_50sdp"
-                        app:strokeWidth="0.8dp"
-                        app:strokeColor="@color/borderColorLight">
+                        app:cardCornerRadius="0dp"
+                        app:cardElevation="0dp"
+                        app:strokeColor="@color/borderColorLight"
+                        app:strokeWidth="0dp">
 
 
-                        <ImageView
-                            android:padding="@dimen/_4sdp"
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
                             android:layout_gravity="center"
-                            android:layout_width="@dimen/_20sdp"
-                            android:layout_height="@dimen/_20sdp"
-                            android:src="@drawable/baseline_arrow_forward_ios_24"
-                            app:tint="@color/lightTextColor" />
+                            android:checked="false"
+                            android:textAllCaps="false"
+                            android:textOff="Off"
+                            android:textOn="On"
+                            android:textSize="@dimen/_15ssp"
+                            android:thumb="@drawable/thumb_selector"
+                            app:showText="true"
+                            app:switchTextAppearance="@style/SwitchTextAppearance"
+                            app:track="@drawable/track_selector" />
 
                     </com.google.android.material.card.MaterialCardView>
 
@@ -893,19 +780,10 @@
                 </LinearLayout>
 
 
-
-
-
             </com.google.android.material.card.MaterialCardView>
-
-
-
-
-
 
 
         </LinearLayout>
-
 
 
     </com.google.android.material.card.MaterialCardView>
